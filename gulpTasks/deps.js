@@ -9,7 +9,8 @@ gulp.task('deps.js', () => {
   return gulp.src([
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
-    'node_modules/jquery-form-validator/form-validator/jquery.form-validator.min.js'
+    'node_modules/jquery-form-validator/form-validator/jquery.form-validator.min.js',
+    'node_modules/jquery-form-validator/form-validator/security.js'
   ])
   .pipe(uglify())
   .pipe(concat('dependencies.min.js'))
