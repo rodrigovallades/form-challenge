@@ -17,6 +17,10 @@
   "homepage": "https://github.com/rodrigovallades/form-challenge#readme",
   "description": "",
   "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "7.0.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -32,7 +36,6 @@
     "gulp-util": "3.0.8",
     "gulp-watch": "4.3.11",
     "gulp-webserver": "0.9.1",
-    "jquery": "^3.3.0",
     "run-sequence": "2.2.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
