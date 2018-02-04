@@ -22,9 +22,6 @@
     "normalize.css": "7.0.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015-native-modules": "^6.9.4",
     "body-parser": "^1.12.3",
     "bootstrap": "3.3.7",
     "gulp": "3.9.1",
