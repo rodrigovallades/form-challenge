@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.2.1",
+    "jquery-form-validator": "^2.3.77",
     "normalize.css": "7.0.0"
   },
   "devDependencies": {
