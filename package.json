@@ -1,0 +1,40 @@
+{
+  "name": "form-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "form": "gulp"
+  },
+  "author": "Rodrigo Vallades Magalhães",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigovallades/form-challenge.git"
+  },
+  "main": "gulpfile.js",
+  "bugs": {
+    "url": "https://github.com/rodrigovallades/form-challenge/issues"
+  },
+  "homepage": "https://github.com/rodrigovallades/form-challenge#readme",
+  "description": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "body-parser": "^1.12.3",
+    "bootstrap": "3.3.7",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.1",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglifycss": "1.0.9",
+    "gulp-util": "3.0.8",
+    "gulp-watch": "4.3.11",
+    "gulp-webserver": "0.9.1",
+    "jquery": "^1.10.2",
+    "run-sequence": "2.2.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
