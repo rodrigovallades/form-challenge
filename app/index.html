@@ -8,40 +8,71 @@
   <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div class="content">
-    <form>
-      <div class="form-group">
-        <span>Full Name (Optional)</span>
-        <input type="text" id="username" />
+  <div class="container">
+    <div class="page-header">
+      <h1>Front-end challenge: Sign-up form<br><small>Rodrigo Vallades Magalhães [<a href="mailto:rodrigo.vallades@gmail.com">rodrigo.vallades@gmail.com</a>]</small></h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-4">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <form id="login" class="well">
+              <div class="form-group">
+                <label for="name">Full Name (Optional)</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" id="email"  data-validation="email" data-validation-error-msg="Valid e-mail required" type="text" class="form-control" aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="repeat_email">Confirm e-mail</label>
+                <input name="repeat_email" id="repeat_email" data-validation="confirmation" data-validation-confirm="email" data-validation-error-msg="E-mails do not match" type="text" class="form-control" aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input name="username" id="username" data-validation="required" data-validation-error-msg="Username required" type="text" class="form-control" aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" id="password" data-validation="required" data-validation-error-msg="Password required" type="password" class="form-control" aria-required="true" />
+              </div>
+              <button class="btn btn-primary" type="submit" />Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <span>Email</span>
-        <input type="text" id="username" />
+      <div class="col-lg-6 col-md-8">
+        <div class="alert alert-info alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4><strong>Hey! Hope you like my solution.</strong></h4>
+          <h4>Some points I would like to make about improvements:</h4>
+          <ul>
+            <li>Added a visual indicator to inform the user of password strengh;</li>
+            <li>Added client-side validation to the form;</li>
+            <li>Made the form more accessible to screen readers;</li>
+            <li>Added styling to the form to make it more visually appealing;</li>
+            <li>Added a loading state to the form submission.<br><br></li>
+          </ul>
+          <h4>About the build of the application:</h4>
+          <ul>
+            <li>The build of this application was output by <strong>GULP</strong>. I only minified and concatenated the dependencies, but I left my own JavaScript code as original, so you can read it. You can build it yourself if you have <strong>NodeJS</strong> and <strong>npm</strong>:
+              <ul>
+                <li><strong>1. npm install</strong> (download dependencies);</li>
+                <li><strong>2. npm run form</strong> (build and auto-start browser).</li>
+              </ul>
+            </li>
+            <li>List of dependencies (download automatically via <strong>npm install</strong>):
+              <ul>
+                <li>bootstrap</li>
+                <li>jquery</li>
+                <li>jquery-form-validator</li>
+                <li>normalize.css</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="form-group">
-        <span>Username</span>
-        <input type="text" id="username" />
-      </div>
-      <div class="form-group">
-        <span>Password</span>
-        <input type="password" id="password" />
-      </div>
-      <input type="submit" value="submit" />
-    </form>
-  </div>
-  <div class="intro">
-    <div>
-      <p>Using this markup as a base, please improve the usability and polish of the sign-up form.</p>
-      <p>This is meant to be a quick exercise, so please don't feel the need to spend more than an hour or so on it. Also, we are using native CSS and JS, but free to use any libraries you find necessary.</p>
-      <p>You are in no way expected to do all of the following (and are not limited to these changes), but some ways you could improve the form include:</p>
-      <ul>
-        <li>Add a visual indicator to inform the user of the strength of their password</li>
-        <li>Add client-side validation to the form</li>
-        <li>Make the form more accessible to screen readers</li>
-        <li>Add styling to the form to make it more visually appealing</li>
-        <li>Right now the page refreshes on submit. Can you make it submit in the background and add a loading state?</li>
-      </ul>
-      <p>When you are done, please click <kbd>save</kbd> above and send us the link.</p>
     </div>
   </div>
   <script src="assets/scripts/dependencies.min.js"></script>
