@@ -20,6 +20,7 @@ gulp.task('deps.css', () => {
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/bootstrap/dist/css/bootstrap.min.css',
+    'node_modules/jquery-form-validator/form-validator/theme-default.min.css'
   ])
   .pipe(uglifycss({ "uglyComments": true }))
   .pipe(concat('dependencies.min.css'))
