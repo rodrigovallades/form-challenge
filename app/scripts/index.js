@@ -7,7 +7,7 @@
     console.log(xhr);
     xhr.onload = function() {
       cb(JSON.parse(this.responseText));
-    }
+    };
     xhr.open('POST', url);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(data));
@@ -29,7 +29,7 @@
       blocked = document.querySelector(blockedClass);
 
       if (blocked) {
-        blocked.remove()
+        blocked.remove();
       }
     }
   }
@@ -41,10 +41,10 @@
       var optionalConfig = {
         fontSize: '14px',
         padding: '0',
-        bad : 'Very weak',
-        weak : 'Weak',
-        good : 'Good',
-        strong : 'Strong'
+        bad: 'Weak password',
+        weak: 'Weak password',
+        good: 'Good password',
+        strong: 'Strong password'
       };
       $('input[type="password"]').displayPasswordStrength(optionalConfig);
     },
@@ -61,7 +61,6 @@
             alert(res.error.msg);
           }
         }
-
       })
       return false;
     }
