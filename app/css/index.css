@@ -14,7 +14,7 @@ h1, h2 {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  background-image: url("../images/ico_loader.gif");
+  background-image: url("../assets/images/ico_loader.gif");
   background-position: 50%;
   background-repeat: no-repeat;
   opacity: .5;

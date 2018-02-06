@@ -14,7 +14,7 @@ gulp.task('deps.js', () => {
   ])
   .pipe(uglify())
   .pipe(concat('dependencies.min.js'))
-  .pipe(gulp.dest('public/assets/scripts'))
+  .pipe(gulp.dest('public/scripts'))
 });
 
 gulp.task('deps.css', () => {
@@ -25,7 +25,7 @@ gulp.task('deps.css', () => {
   ])
   .pipe(uglifycss({ "uglyComments": true }))
   .pipe(concat('dependencies.min.css'))
-  .pipe(gulp.dest('public/assets/css'))
+  .pipe(gulp.dest('public/css'))
 });
 
 gulp.task('deps.fonts', () => {

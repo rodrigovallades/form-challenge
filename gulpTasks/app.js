@@ -17,20 +17,20 @@ gulp.task('app.css', () => {
   return gulp.src('app/**/*.css')
     //.pipe(uglifycss({ "uglyComments": true }))
     .pipe(concat('index.css'))
-    .pipe(gulp.dest('public/assets/css'))
+    .pipe(gulp.dest('public/css'))
 })
 
 gulp.task('app.scss', function() {
   return gulp.src('app/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('public/assets/css'));
+    .pipe(gulp.dest('public/css'));
 })
 
 gulp.task('app.js', () => {
   return gulp.src('app/**/*.js')
     //.pipe(uglify({ mangle: false }))
     .pipe(concat('index.js'))
-    .pipe(gulp.dest('public/assets/scripts'))
+    .pipe(gulp.dest('public/scripts'))
 })
 
 gulp.task('app.assets', () => {
